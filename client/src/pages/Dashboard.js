@@ -32,7 +32,7 @@ function Dashboard() {
   const fetchTransactions = async (token) => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/transactions",
+        "https://finance-tracker-z7ls.onrender.com/api/transactions",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ function Dashboard() {
   const fetchSummary = async (token) => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/transactions/summary",
+        "https://finance-tracker-z7ls.onrender.com///api/transactions/summary",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -67,7 +67,7 @@ function Dashboard() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/transactions/add",
+        "https://finance-tracker-z7ls.onrender.com/api/transactions/add",
         { type, amount, category, description },
         {
           headers: {
@@ -92,7 +92,7 @@ function Dashboard() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/transactions/${id}`,
+        `https://finance-tracker-z7ls.onrender.com/api/transactions/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

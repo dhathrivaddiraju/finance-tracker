@@ -15,12 +15,12 @@ function Overview() {
 
   const fetchData = async (token) => {
     const tRes = await axios.get(
-      "http://localhost:5000/api/transactions",
+      "https://finance-tracker-z7ls.onrender.com/api/transactions",
       { headers: { Authorization: `Bearer ${token}` } }
     );
 
     const sRes = await axios.get(
-      "http://localhost:5000/api/transactions/summary",
+      "https://finance-tracker-z7ls.onrender.com/api/transactions/summary",
       { headers: { Authorization: `Bearer ${token}` } }
     );
 

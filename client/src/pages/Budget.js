@@ -14,7 +14,7 @@ function Budget() {
 
   const fetchExpenses = async (token) => {
     const res = await axios.get(
-      "http://localhost:5000/api/transactions",
+      "https://finance-tracker-z7ls.onrender.com/api/transactions",
       { headers: { Authorization: `Bearer ${token}` } }
     );
 

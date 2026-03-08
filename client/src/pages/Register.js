@@ -14,7 +14,7 @@ function Register() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://finance-tracker-z7ls.onrender.com/api/auth/register",
         { name, email, password }
       );
 

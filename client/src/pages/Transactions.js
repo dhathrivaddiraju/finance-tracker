@@ -16,7 +16,7 @@ function Transactions() {
 
   const fetchTransactions = async (token) => {
     const res = await axios.get(
-      "http://localhost:5000/api/transactions",
+      "https://finance-tracker-z7ls.onrender.com/api/transactions",
       { headers: { Authorization: `Bearer ${token}` } }
     );
     setTransactions(res.data);
@@ -27,7 +27,7 @@ function Transactions() {
     const token = localStorage.getItem("token");
 
     await axios.post(
-      "http://localhost:5000/api/transactions/add",
+      "https://finance-tracker-z7ls.onrender.com/api/transactions/add",
       { type, amount, category },
       { headers: { Authorization: `Bearer ${token}` } }
     );
@@ -40,7 +40,7 @@ function Transactions() {
   const handleDelete = async (id) => {
     const token = localStorage.getItem("token");
     await axios.delete(
-      `http://localhost:5000/api/transactions/${id}`,
+      `https://finance-tracker-z7ls.onrender.com/api/transactions/${id}`,
       { headers: { Authorization: `Bearer ${token}` } }
     );
     fetchTransactions(token);
@@ -57,7 +57,7 @@ function Transactions() {
     const token = localStorage.getItem("token");
 
     await axios.put(
-      `http://localhost:5000/api/transactions/${id}`,
+      `https://finance-tracker-z7ls.onrender.com/api/transactions/${id}`,
       { type, amount, category },
       { headers: { Authorization: `Bearer ${token}` } }
     );
