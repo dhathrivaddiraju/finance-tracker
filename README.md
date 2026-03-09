@@ -5,6 +5,11 @@ A full-stack web application that allows users to track income and expenses, man
 The application uses secure authentication and a RESTful API to manage financial data.
 
 ---
+## Live Demo
+Frontend: https://finance-tracker-deploy-opal.vercel.app  
+Backend: https://finance-tracker-z7ls.onrender.com
+
+---
 
 ## Features
 
@@ -58,7 +63,6 @@ finance-tracker
 │
 ├── .gitignore
 └── README.md
-```
 
 ---
 
@@ -67,7 +71,7 @@ finance-tracker
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/YOUR_USERNAME/finance-tracker.git
+git clone https://github.com/dhathrivaddiraju/finance-tracker.git
 cd finance-tracker
 ```
 
